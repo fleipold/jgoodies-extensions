@@ -1,0 +1,54 @@
+* CascadingPresentationModel ListModelHolder/ ObservableListHolder
+
+as I've used hibernate with bindings I ran accross the problem, that I could
+not use ListModel implementing Lists for my domain objects, because
+hibernate uses its own List implementations.
+
+My solution to the problem was an alternative implementation of
+ListModelHolder, that holds an ordinary lists, implements ObservableList and
+ adds the eventing. One caveat here is of course, that you might end up with
+two wrappers for the same list, that do not notice changes made through the
+other wrapper.
+
+Secondly I introduced an indirection to a ValueModel. This allows
+to use a ListModelHolder in conjunction with a PropertyAdapter/
+PresentationModel.
+
+This in turn lead me to the idea of the CascadingPresentationModel, that
+allows for the cascading of PresentationModels either in 1:1 or 1:n
+relations. It propagates changes of the changed state and supports firing
+contentsChangedEvents on enclosing ListModels.
+
+* Presentation Model
+    additional unbound property chaning that indicates that a bean change is on the way
+
+* Readonly ValueModel?
+
+* SelectionInList might expose nound hasSelection property
+
+* ListModelFilter
+
+* Binding Actions
+  Using reflection and being independant of Swing
+
+*  Advanced TableBinding
+    See what Matthias Muller did...
+
+* Advanced Enable/ Editable Binding
+
+* Convenienve Constructor in SelectionInList,. that takes an ObservableList...
+
+
+* ComponentFactory should be a method/ interface
+  Could do fancy things like mixing in editable enbled bindings, more like a stateful
+  builder.
+
+
+
+
+** Other
+
+* Method call Graph to alleviate refactoring
+
+
+

@@ -6,6 +6,7 @@ import com.jgoodies.binding.beans.BeanUtils;
 import javax.swing.event.ListDataListener;
 import javax.swing.event.ListDataEvent;
 import java.util.*;
+import static java.util.Arrays.asList;
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeEvent;
 
@@ -27,6 +28,9 @@ public class BeanObservingObservableListModel<T> implements ObservableList<T> {
     final Set<T> trackedInstances;
     private List<ListDataListener> clientListeners = new ArrayList<ListDataListener>();
 
+    public BeanObservingObservableListModel(T... elements){
+        this(asList(elements));
+    }
 
     public BeanObservingObservableListModel(List<T> list) {
         this(new ObservationListWrapper<T>(list));
@@ -182,9 +186,6 @@ public class BeanObservingObservableListModel<T> implements ObservableList<T> {
     }
 
     private class WrappedListListener implements ListDataListener {
-
-
-
 
         public void intervalAdded(ListDataEvent e) {
             for (int index = e.getIndex0(); index < e.getIndex1() + 1; index++){

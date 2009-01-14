@@ -12,32 +12,27 @@ import java.beans.PropertyChangeEvent;
 
 import ws.leipold.felix.jgoodies.listadapter.ObservationListWrapper;
 
-/**
- * Created by IntelliJ IDEA.
- * User: fleipold
- * Date: Jun 9, 2008
- * Time: 11:56:44 PM
- * To change this template use File | Settings | File Templates.
- */
-public class BeanObservingObservableListModel<T> implements ObservableList<T> {
+/** A list model that listens to its elements and fires property chaged events in case they fire a property change */
+
+public class BeanListModel<T> implements ObservableList<T> {
 
 
     final ObservableList<T> wrappee;
-    private BeanObservingObservableListModel<T>.ListElementBeanPropertyChangeListener listener;
-    private BeanObservingObservableListModel<T>.WrappedListListener listListener;
+    private BeanListModel<T>.ListElementBeanPropertyChangeListener listener;
+    private BeanListModel<T>.WrappedListListener listListener;
     final Set<T> trackedInstances;
     private List<ListDataListener> clientListeners = new ArrayList<ListDataListener>();
 
-    public BeanObservingObservableListModel(T... elements){
+    public BeanListModel(T... elements){
         this(asList(elements));
     }
 
-    public BeanObservingObservableListModel(List<T> list) {
+    public BeanListModel(List<T> list) {
         this(new ObservationListWrapper<T>(list));
     }
 
 
-    public BeanObservingObservableListModel(ObservableList<T> wrappee) {
+    public BeanListModel(ObservableList<T> wrappee) {
         this.wrappee = wrappee;
 
         trackedInstances = new HashSet<T>();

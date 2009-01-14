@@ -13,14 +13,14 @@ import javax.swing.event.ListDataEvent;
  * Time: 2:09:06 AM
  * To change this template use File | Settings | File Templates.
  */
-public class BeanObservingObservableListModelTest extends TestCase {
+public class BeanListModelTest extends TestCase {
     boolean flag = false;
     private MockA a;
     private ArrayListModel<MockA> wrappee;
 
     public void testChangingPropertyCallsListenerOnExisitngEelement(){
         wrappee.add(a);
-        BeanObservingObservableListModel<MockA> listModel = new BeanObservingObservableListModel<MockA>(wrappee);
+        BeanListModel<MockA> listModel = new BeanListModel<MockA>(wrappee);
         listModel.addListDataListener(new ListDataListener());
         a.setA("Felix");
         assertTrue(flag);
@@ -30,7 +30,7 @@ public class BeanObservingObservableListModelTest extends TestCase {
 
     public void testChangingPropertyCallsListenerOnAddedElement(){
         wrappee.add(a);
-        BeanObservingObservableListModel<MockA> listModel = new BeanObservingObservableListModel<MockA>(wrappee);
+        BeanListModel<MockA> listModel = new BeanListModel<MockA>(wrappee);
         MockA b = new MockA();
         listModel.addListDataListener(new ListDataListener());
         listModel.add(b);

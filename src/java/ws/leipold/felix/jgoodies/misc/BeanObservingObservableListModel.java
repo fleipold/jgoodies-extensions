@@ -9,6 +9,8 @@ import java.util.*;
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeEvent;
 
+import ws.leipold.felix.jgoodies.listadapter.ObservationListWrapper;
+
 /**
  * Created by IntelliJ IDEA.
  * User: fleipold
@@ -24,6 +26,11 @@ public class BeanObservingObservableListModel<T> implements ObservableList<T> {
     private BeanObservingObservableListModel<T>.WrappedListListener listListener;
     final Set<T> trackedInstances;
     private List<ListDataListener> clientListeners = new ArrayList<ListDataListener>();
+
+
+    public BeanObservingObservableListModel(List<T> list) {
+        this(new ObservationListWrapper<T>(list));
+    }
 
 
     public BeanObservingObservableListModel(ObservableList<T> wrappee) {
@@ -189,14 +196,12 @@ public class BeanObservingObservableListModel<T> implements ObservableList<T> {
         }
 
         public void intervalRemoved(ListDataEvent e) {
-            Set<T> toBeReleased = new HashSet(trackedInstances);
-            for (Iterator<T> tIterator = wrappee.iterator(); tIterator.hasNext();) {
-                T t = tIterator.next();
+            Set<T> toBeReleased = new HashSet<T>(trackedInstances);
+            for (T t : wrappee) {
                 toBeReleased.remove(t);
             }
 
-            for (Iterator<T> tIterator = toBeReleased.iterator(); tIterator.hasNext();) {
-                T t = tIterator.next();
+            for (T t : toBeReleased) {
                 BeanUtils.removePropertyChangeListener(t, listener);
                 trackedInstances.remove(t);
             }

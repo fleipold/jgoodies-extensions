@@ -1,21 +1,20 @@
 package ws.leipold.felix.jgoodies.polyadapter;
 
-import com.jgoodies.forms.layout.FormLayout;
-import com.jgoodies.forms.layout.CellConstraints;
-import com.jgoodies.forms.builder.PanelBuilder;
-import com.jgoodies.forms.builder.DefaultFormBuilder;
-import com.jgoodies.forms.factories.Borders;
-import com.jgoodies.binding.adapter.BasicComponentFactory;
-import com.jgoodies.binding.list.SelectionInList;
 import com.jgoodies.binding.PresentationModel;
-import com.jgoodies.binding.value.ValueModel;
+import com.jgoodies.binding.adapter.BasicComponentFactory;
 import com.jgoodies.binding.beans.PropertyAdapter;
-
+import com.jgoodies.binding.list.SelectionInList;
+import com.jgoodies.binding.value.ValueModel;
+import com.jgoodies.forms.builder.DefaultFormBuilder;
+import com.jgoodies.forms.builder.PanelBuilder;
+import com.jgoodies.forms.factories.Borders;
+import com.jgoodies.forms.layout.CellConstraints;
+import com.jgoodies.forms.layout.FormLayout;
 
 import javax.swing.*;
 import java.awt.*;
-import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
 
 
 /**

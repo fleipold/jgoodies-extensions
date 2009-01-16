@@ -3,10 +3,10 @@ package ws.leipold.felix.jgoodies.listadapter;
 import com.jgoodies.binding.list.ObservableList;
 
 import javax.swing.*;
-import javax.swing.event.ListSelectionListener;
-import javax.swing.event.ListSelectionEvent;
-import javax.swing.event.ListDataListener;
 import javax.swing.event.ListDataEvent;
+import javax.swing.event.ListDataListener;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
 import java.util.EventListener;
 
 /**

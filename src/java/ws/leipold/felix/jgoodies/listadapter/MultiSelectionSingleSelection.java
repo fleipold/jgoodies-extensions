@@ -1,10 +1,9 @@
 package ws.leipold.felix.jgoodies.listadapter;
 
-import com.jgoodies.binding.value.ValueModel;
 import com.jgoodies.binding.value.ValueHolder;
+import com.jgoodies.binding.value.ValueModel;
 
 import javax.swing.*;
-import javax.swing.event.ListDataListener;
 import javax.swing.event.ListDataEvent;
 import java.beans.PropertyChangeListener;
 

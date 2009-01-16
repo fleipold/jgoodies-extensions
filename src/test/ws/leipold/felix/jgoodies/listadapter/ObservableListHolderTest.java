@@ -1,12 +1,11 @@
 package ws.leipold.felix.jgoodies.listadapter;
 
-import junit.framework.TestCase;
 import com.jgoodies.binding.list.ArrayListModel;
 import com.jgoodies.binding.list.ObservableList;
-import com.jgoodies.binding.value.ValueModel;
 import com.jgoodies.binding.value.ValueHolder;
+import com.jgoodies.binding.value.ValueModel;
+import junit.framework.TestCase;
 
-import javax.swing.event.ListDataListener;
 import javax.swing.event.ListDataEvent;
 import java.util.Arrays;
 

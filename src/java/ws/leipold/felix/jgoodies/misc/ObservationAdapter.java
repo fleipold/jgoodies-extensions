@@ -1,7 +1,7 @@
 package ws.leipold.felix.jgoodies.misc;
 
-import com.jgoodies.binding.value.ValueModel;
 import com.jgoodies.binding.value.AbstractValueModel;
+import com.jgoodies.binding.value.ValueModel;
 
 /**todo: Add support for PropertyChangeListener on "value"-property see ValueHolder
  * Created by IntelliJ IDEA.

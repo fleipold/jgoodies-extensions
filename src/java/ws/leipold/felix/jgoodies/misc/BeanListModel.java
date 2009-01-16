@@ -1,16 +1,15 @@
 package ws.leipold.felix.jgoodies.misc;
 
-import com.jgoodies.binding.list.ObservableList;
 import com.jgoodies.binding.beans.BeanUtils;
+import com.jgoodies.binding.list.ObservableList;
+import ws.leipold.felix.jgoodies.listadapter.ObservationListWrapper;
 
-import javax.swing.event.ListDataListener;
 import javax.swing.event.ListDataEvent;
+import javax.swing.event.ListDataListener;
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
 import java.util.*;
 import static java.util.Arrays.asList;
-import java.beans.PropertyChangeListener;
-import java.beans.PropertyChangeEvent;
-
-import ws.leipold.felix.jgoodies.listadapter.ObservationListWrapper;
 
 /** A list model that listens to its elements and fires property chaged events in case they fire a property change */
 

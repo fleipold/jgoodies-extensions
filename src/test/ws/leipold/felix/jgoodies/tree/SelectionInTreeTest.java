@@ -2,11 +2,11 @@ package ws.leipold.felix.jgoodies.tree;
 
 import junit.framework.TestCase;
 
-import javax.swing.tree.DefaultTreeModel;
-import javax.swing.tree.DefaultMutableTreeNode;
-import javax.swing.tree.TreePath;
 import javax.swing.*;
 import javax.swing.event.TreeSelectionEvent;
+import javax.swing.tree.DefaultMutableTreeNode;
+import javax.swing.tree.DefaultTreeModel;
+import javax.swing.tree.TreePath;
 
 /**
  * Created by IntelliJ IDEA.

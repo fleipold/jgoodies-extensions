@@ -1,13 +1,11 @@
 package ws.leipold.felix.jgoodies.polyadapter;
 
-import junit.framework.TestCase;
 import com.jgoodies.binding.value.ValueHolder;
 import com.jgoodies.binding.value.ValueModel;
+import junit.framework.TestCase;
 
-import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeEvent;
-
-import ws.leipold.felix.jgoodies.polyadapter.TypeCaseModel;
+import java.beans.PropertyChangeListener;
 
 /**
  * TestCase for the TypeCaseModel

@@ -1,8 +1,8 @@
 package ws.leipold.felix.jgoodies.misc;
 
+import com.jgoodies.binding.list.ArrayListModel;
 import junit.framework.TestCase;
 import ws.leipold.felix.jgoodies.polyadapter.MockA;
-import com.jgoodies.binding.list.ArrayListModel;
 
 import javax.swing.event.ListDataEvent;
 

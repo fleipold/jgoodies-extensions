@@ -1,22 +1,18 @@
 package ws.leipold.felix.jgoodies.listadapter;
 
-import java.beans.PropertyChangeListener;
-import java.beans.PropertyChangeSupport;
+import com.jgoodies.binding.list.ObservableList;
+import com.jgoodies.binding.value.ValueModel;
+
+import javax.swing.*;
+import javax.swing.event.EventListenerList;
+import javax.swing.event.ListDataEvent;
+import javax.swing.event.ListDataListener;
 import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
-
-import javax.swing.ListModel;
-import javax.swing.event.EventListenerList;
-import javax.swing.event.ListDataEvent;
-import javax.swing.event.ListDataListener;
-
-import com.jgoodies.binding.beans.ExtendedPropertyChangeSupport;
-import com.jgoodies.binding.value.AbstractValueModel;
-import com.jgoodies.binding.value.ValueModel;
-import com.jgoodies.binding.list.ObservableList;
 
 
 public class ObservableListHolder<T> implements ObservableList<T> {

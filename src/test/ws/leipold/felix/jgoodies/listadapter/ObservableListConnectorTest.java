@@ -1,11 +1,8 @@
 package ws.leipold.felix.jgoodies.listadapter;
 
-import junit.framework.TestCase;
-
-import javax.swing.*;
-
-import com.jgoodies.binding.list.ObservableList;
 import com.jgoodies.binding.list.ArrayListModel;
+import com.jgoodies.binding.list.ObservableList;
+import junit.framework.TestCase;
 
 /**
  * User: felix

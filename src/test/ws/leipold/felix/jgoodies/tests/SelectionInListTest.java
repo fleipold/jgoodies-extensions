@@ -1,14 +1,14 @@
 package ws.leipold.felix.jgoodies.tests;
 
-import junit.framework.TestCase;
-import com.jgoodies.binding.list.ObservableList;
 import com.jgoodies.binding.list.ArrayListModel;
+import com.jgoodies.binding.list.ObservableList;
 import com.jgoodies.binding.list.SelectionInList;
+import junit.framework.TestCase;
 
 import javax.swing.*;
-import java.util.Arrays;
-import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
+import java.util.Arrays;
 
 /**
  * User: Felix Leipold

@@ -1,6 +1,7 @@
 package ws.leipold.felix.swingutils;
 
 import com.jgoodies.forms.builder.DefaultFormBuilder;
+import com.jgoodies.forms.builder.ButtonBarBuilder2;
 import com.jgoodies.forms.layout.FormLayout;
 
 import javax.swing.*;
@@ -43,4 +44,9 @@ public class UIUtils {
     }
 
 
+    public static Component creeateLeftAlignedBar(JComponent... buttons) {
+        ButtonBarBuilder2 bb = ButtonBarBuilder2.createLeftToRightBuilder();
+        bb.addButton(buttons);
+        return bb.getPanel();
+    }
 }

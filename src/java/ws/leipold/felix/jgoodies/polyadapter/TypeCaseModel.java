@@ -1,13 +1,13 @@
 package ws.leipold.felix.jgoodies.polyadapter;
 
 
-import com.jgoodies.binding.value.ValueModel;
+import com.jgoodies.binding.beans.Model;
 import com.jgoodies.binding.value.AbstractValueModel;
 import com.jgoodies.binding.value.ValueHolder;
-import com.jgoodies.binding.beans.Model;
+import com.jgoodies.binding.value.ValueModel;
 
-import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
 import java.util.HashMap;
 import java.util.Map;
 

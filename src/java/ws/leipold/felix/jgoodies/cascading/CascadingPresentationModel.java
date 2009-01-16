@@ -3,19 +3,16 @@ package ws.leipold.felix.jgoodies.cascading;
 import com.jgoodies.binding.PresentationModel;
 import com.jgoodies.binding.list.ObservableList;
 import com.jgoodies.binding.value.ValueModel;
+import static ws.leipold.felix.jgoodies.listadapter.ListAdapters.observe;
+import ws.leipold.felix.jgoodies.listadapter.ObservableListHolder;
 
-import java.beans.PropertyChangeListener;
+import javax.swing.event.ListDataEvent;
+import javax.swing.event.ListDataListener;
 import java.beans.PropertyChangeEvent;
-import java.util.List;
+import java.beans.PropertyChangeListener;
 import java.util.ArrayList;
 import java.util.Iterator;
-
-import ws.leipold.felix.jgoodies.listadapter.*;
-import static ws.leipold.felix.jgoodies.listadapter.ListAdapters.observe;
-
-import javax.swing.event.ListDataListener;
-import javax.swing.event.ListDataEvent;
-import javax.swing.plaf.basic.BasicInternalFrameTitlePane;
+import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.

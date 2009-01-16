@@ -3,8 +3,6 @@ package ws.leipold.felix.jgoodies.listadapter;
 
 import com.jgoodies.binding.list.ArrayListModel;
 import com.jgoodies.binding.list.ObservableList;
-import com.jgoodies.binding.value.ValueModel;
-import com.jgoodies.binding.value.ValueHolder;
 
 import javax.swing.*;
 import java.util.Arrays;

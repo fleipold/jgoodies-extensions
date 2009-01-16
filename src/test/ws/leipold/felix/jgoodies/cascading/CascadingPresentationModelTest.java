@@ -1,19 +1,17 @@
 package ws.leipold.felix.jgoodies.cascading;
 
-import junit.framework.TestCase;
-
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.beans.PropertyChangeListener;
-import java.beans.PropertyChangeEvent;
-
-import com.jgoodies.binding.value.ValueHolder;
+import com.jgoodies.binding.beans.Model;
 import com.jgoodies.binding.list.ObservableList;
 import com.jgoodies.binding.list.SelectionInList;
-import com.jgoodies.binding.beans.Model;
+import com.jgoodies.binding.value.ValueHolder;
+import junit.framework.TestCase;
 
 import javax.swing.*;
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * User: Felix Leipold

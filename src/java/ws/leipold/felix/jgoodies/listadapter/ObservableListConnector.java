@@ -2,8 +2,8 @@ package ws.leipold.felix.jgoodies.listadapter;
 
 import com.jgoodies.binding.list.ObservableList;
 
-import javax.swing.event.ListDataListener;
 import javax.swing.event.ListDataEvent;
+import javax.swing.event.ListDataListener;
 import java.util.ArrayList;
 
 /**

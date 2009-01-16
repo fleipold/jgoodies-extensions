@@ -2,14 +2,11 @@ package ws.leipold.felix.jgoodies.listadapter;
 
 import junit.framework.TestCase;
 
-import java.util.List;
-import java.util.Arrays;
-import java.util.ArrayList;
-
-import com.jgoodies.binding.value.ValueHolder;
-
-import javax.swing.event.ListDataListener;
 import javax.swing.event.ListDataEvent;
+import javax.swing.event.ListDataListener;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 /**
   * User: Felix Leipold

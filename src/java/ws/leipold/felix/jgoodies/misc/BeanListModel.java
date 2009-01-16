@@ -31,6 +31,10 @@ public class BeanListModel<T> implements ObservableList<T> {
         this(new ObservationListWrapper<T>(list));
     }
 
+    public BeanListModel(){
+        this(new ArrayList<T>());
+    }
+
 
     public BeanListModel(ObservableList<T> wrappee) {
         this.wrappee = wrappee;

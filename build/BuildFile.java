@@ -35,7 +35,8 @@ public class BuildFile extends BuildBase {
 
         Classes libs = combine(
                 libraries.jgoodies.binding(),
-                libraries.jgoodies.forms()
+                libraries.jgoodies.forms(),
+                libraries.commons.lang()
         );
 
         Classes testLibs = libraries.junit();

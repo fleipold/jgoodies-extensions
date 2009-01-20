@@ -49,4 +49,21 @@ public class UIUtils {
         bb.addButton(buttons);
         return bb.getPanel();
     }
+
+    public static void loadPlasticLnF(){
+        try {
+            UIManager.setLookAndFeel("com.jgoodies.looks.plastic.PlasticXPLookAndFeel");
+        } catch (Exception e) {
+            
+        }
+    }
+
+    public static void fixLnF(){
+        final Object osName = System.getProperties().get("os.name");
+        if (!osName.equals("Mac OS X")){
+            loadPlasticLnF();
+        }
+
+    }
+
 }

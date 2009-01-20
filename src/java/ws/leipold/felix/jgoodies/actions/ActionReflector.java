@@ -64,7 +64,7 @@ public class ActionReflector {
 
         final ValueModel enabled = reflectEnabled(presentationModel, actionName);
 
-        AdvancedAction a = (AdvancedAction) actionFactory.createAction(actionName);
+        AdvancedAction a =  actionFactory.createAction(actionName);
 
 
         a.getActionTrigger().addTiggerListener(new MagicAction(actionMethod, presentationModel));
@@ -110,7 +110,6 @@ public class ActionReflector {
             this.actionMethod = actionMethod;
             this.presentationModel = presentationModel;
         }
-
 
 
         public void handleTrigger() {

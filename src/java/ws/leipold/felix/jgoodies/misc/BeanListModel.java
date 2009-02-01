@@ -53,7 +53,7 @@ public class BeanListModel<T> implements ObservableList<T> {
     private void fireBeanChangedEvent(Object source) {
         int index = wrappee.indexOf(source);
         for (ListDataListener ldl : clientListeners){
-            ldl.contentsChanged(new ListDataEvent(this, ListDataEvent.CONTENTS_CHANGED, index, index+1 ));
+            ldl.contentsChanged(new ListDataEvent(this, ListDataEvent.CONTENTS_CHANGED, index, index ));
         }
     }
 

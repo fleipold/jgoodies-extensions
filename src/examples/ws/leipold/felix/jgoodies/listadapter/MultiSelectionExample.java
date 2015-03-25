@@ -2,7 +2,7 @@ package ws.leipold.felix.jgoodies.listadapter;
 
 import com.jgoodies.binding.adapter.BasicComponentFactory;
 import com.jgoodies.binding.adapter.ComboBoxAdapter;
-import com.jgoodies.binding.list.ObservableList;
+import com.jgoodies.common.collect.ObservableList;
 import com.jgoodies.binding.list.SelectionInList;
 import com.jgoodies.forms.builder.DefaultFormBuilder;
 import com.jgoodies.forms.factories.Borders;

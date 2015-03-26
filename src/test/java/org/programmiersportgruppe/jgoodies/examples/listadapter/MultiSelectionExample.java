@@ -68,7 +68,6 @@ public class MultiSelectionExample {
         combo = new JComboBox();
         combo.setModel(new ComboBoxAdapter(comboSelection));
 
-
     }
 
     private void initModel() {

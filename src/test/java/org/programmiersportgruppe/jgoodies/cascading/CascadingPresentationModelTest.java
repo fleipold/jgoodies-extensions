@@ -5,6 +5,7 @@ import com.jgoodies.common.collect.ObservableList;
 import com.jgoodies.binding.list.SelectionInList;
 import com.jgoodies.binding.value.ValueHolder;
 import junit.framework.TestCase;
+import org.junit.Test;
 
 import javax.swing.*;
 import java.beans.PropertyChangeEvent;
@@ -13,11 +14,15 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertTrue;
+
 /**
  * User: Felix Leipold
  * Date: 21.10.2005
  */
-public class CascadingPresentationModelTest extends TestCase {
+public class CascadingPresentationModelTest {
     private boolean flag;
 
 
@@ -45,6 +50,7 @@ public class CascadingPresentationModelTest extends TestCase {
 
     }
 
+    @Test
     public void testRealCascading(){
         TestBean outerBean = new TestBean(new ArrayList());
         TestBean innerBean = new TestBean();
@@ -71,6 +77,7 @@ public class CascadingPresentationModelTest extends TestCase {
         assertNull(innerSelection.getValue());
     }
 
+    @Test
     public void testListWrapperInSelection(){
         CascadingPresentationModel cpm = new CascadingPresentationModel(new ValueHolder(new TestBean(), true));
         ObservableList childList = cpm.getListModel("children");

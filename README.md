@@ -29,7 +29,7 @@ Add the dependency to your pom:
 
 ~~~ .xml
 <dependency>
-          <groupId>org.buildobjects.jgoodies</groupId>
+          <groupId>org.programmiersportgruppe.jgoodies</groupId>
           <artifactId>jgoodies-extensions</artifactId>
           <version>0.0.1</version>
 </dependency>

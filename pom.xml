@@ -1,9 +1,9 @@
 <project>
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.programmiersportgruppe.jgoodies</groupId>
-    <artifactId>jgoodies-extendsions</artifactId>
+    <artifactId>jgoodies-extensions</artifactId>
     <packaging>jar</packaging>
-    <name>jgodies extensions</name>
+    <name>jgoodies-extensions</name>
     <version>VERSION</version>
     <description>Extensions to the JGoodies Libraries</description>
     <url>https://github.com/fleipold/jproc</url>
